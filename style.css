@@ -134,8 +134,8 @@ button {
     position: absolute;
     left: 157px;
     top: 185px;
-    width: 100px;
-    height: 50px;
+    width: 10rem;
+    height: 5rem;
     animation: aumentar 1.4s ease-in-out forwards;
   }
   
@@ -146,5 +146,37 @@ button {
     }
     100% {
       transform: scale(2.9);
+    }
+  }
+
+  @media (max-width: 700px) {
+    .div1, .div2 {
+        width: 70vw;
+    }
+
+    img, .cook {
+        width: 17rem;
+        height: 15rem;
+    }
+
+    .img2 {
+        top: 210px;
+    }
+
+  }
+
+  @media (max-width: 562px) {
+    .img2{
+        width: 6rem;
+        height: 2.5rem;
+        left: 150px;
+    }
+  }
+
+  @media (max-width: 350px){
+    
+    .img2{
+        left: 80px;
+        top: 210px;        
     }
   }
